@@ -9,5 +9,5 @@ import com.tandem.tandemtest.domain.community.ICommunityRepository
  *
  */
 class GetCommunityUseCase(private val communityRepository: ICommunityRepository) {
-    suspend operator fun invoke() = communityRepository.getCommunities()
+    suspend operator fun invoke(pageId: Int) = communityRepository.getCommunities(pageId)
 }
