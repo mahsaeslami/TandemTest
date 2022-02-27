@@ -172,5 +172,4 @@ class CommunityViewModelTest {
             VerifyNoFurtherInteractions on saveCommunityLiveDataObserver
         }
     }
-
 }
