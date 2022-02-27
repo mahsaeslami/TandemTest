@@ -15,7 +15,8 @@
         android:theme="@style/Theme.TandemTest">
         <activity
             android:name=".presentation.ui.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

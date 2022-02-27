@@ -21,7 +21,7 @@ class CommunityViewModel(
 ) : ViewModel() {
 
     val communityLiveData: MutableLiveData<State<List<Community>>> = MutableLiveData()
-    val saveCommunityLiveData: MutableLiveData<State<Boolean>> = MutableLiveData()
+    val saveCommunityLiveData: MutableLiveData<State<Pair<Int, Boolean>>> = MutableLiveData()
 
     fun getCommunities(pageId: Int) {
         communityLiveData.value = State.Loading
@@ -52,7 +52,7 @@ class CommunityViewModel(
             saveCommunityUseCase(communityId, isLike).subscribeBy(
                 onSuccess = { result ->
                     saveCommunityLiveData.postValue(
-                        State.Success(result)
+                        State.Success(Pair(communityId, result ?: false))
                     )
                 },
                 onError = {
@@ -61,6 +61,5 @@ class CommunityViewModel(
 
             )
         }
-
     }
 }

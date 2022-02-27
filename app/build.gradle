@@ -15,6 +15,7 @@ android {
         versionCode 1
         versionName "1.0"
 
+        vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -32,10 +33,12 @@ android {
             buildConfigField "String", "BASE_URL", BASE_URL
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = '1.8'
     }
