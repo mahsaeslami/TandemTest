@@ -10,6 +10,7 @@ data class CommunitiesResponse(
 )
 
 data class CommunityResponse(
+    val id: Int = 0,
     val topic: String = "",
     val firstName: String = "",
     val pictureUrl: String = "",
@@ -22,6 +23,7 @@ fun CommunitiesResponse.toEntity() =
     response.map { communityResponse -> communityResponse.toEntity() }
 
 fun CommunityResponse.toEntity() = CommunityEntity(
+    this.id,
     this.topic,
     this.firstName,
     this.pictureUrl,

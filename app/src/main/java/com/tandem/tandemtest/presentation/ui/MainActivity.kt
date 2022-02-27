@@ -18,12 +18,11 @@ class MainActivity : AppCompatActivity() {
         subscribeViews()
     }
 
-    fun subscribeViews() {
+    private fun subscribeViews() {
         viewModel.communityLiveData.observe(this, { state ->
             when (state) {
                 is State.Loading -> {}
-                is State.Error -> {
-                }
+                is State.Error -> {}
                 is State.Success -> {
                     Log.i("tag", state.data.toString())
                 }

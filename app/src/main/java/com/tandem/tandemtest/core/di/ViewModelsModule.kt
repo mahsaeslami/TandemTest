@@ -8,5 +8,5 @@ import org.koin.dsl.module
  * Created by Mahsa on 2022.02.26
  */
 val viewModelsModule = module {
-    viewModel { CommunityViewModel(get()) }
+    viewModel { CommunityViewModel(get(), get()) }
 }

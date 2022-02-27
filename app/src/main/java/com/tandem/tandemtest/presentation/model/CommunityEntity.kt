@@ -12,7 +12,7 @@ data class Community(
     val natives: List<String> = emptyList(),
     val learns: List<String> = emptyList(),
     val referenceCnt: Int = 0,
-    val isLike: Boolean = false
+    val isLike: Boolean
 )
 
 fun CommunityEntity.toPresentationModel() = Community(
@@ -21,6 +21,7 @@ fun CommunityEntity.toPresentationModel() = Community(
     this.pictureUrl,
     this.natives,
     this.learns,
-    this.referenceCnt
+    this.referenceCnt,
+    this.isLike
 )
 

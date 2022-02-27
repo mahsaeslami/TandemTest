@@ -13,4 +13,6 @@ interface ICommunityRepository {
 
     suspend fun getCommunities(pageId: Int): Result<List<CommunityEntity>?>
 
+    suspend fun saveCommunity(communityId: Int, isLike: Boolean): Result<Boolean>
+
 }
