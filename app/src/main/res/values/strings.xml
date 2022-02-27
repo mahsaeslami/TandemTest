@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">TandemTest</string>
+    <string name="app_name">Community</string>
+    <string name="nativeTitle">NATIVE</string>
+    <string name="learnsTitle">LEARNS</string>
 </resources>

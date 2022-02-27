@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text -->
+    <item name="textMedium" type="dimen">14sp</item>
+    <item name="textSmall" type="dimen">12sp</item>
+
+
+    <!-- Spacing -->
+    <item name="spacingLarge" type="dimen">32dp</item>
+    <item name="spacingMedium" type="dimen">16dp</item>
+    <item name="spacingSmall" type="dimen">8dp</item>
+
+    <!-- Picture -->
+    <dimen name="profilePicture">116dp</dimen>
+    <dimen name="LikePicture">24dp</dimen>
+    <dimen name="newPicture">32dp</dimen>
+
+    <dimen name="progressBar">56dp</dimen>
+
+
+</resources>

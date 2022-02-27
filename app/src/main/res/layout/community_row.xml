@@ -10,11 +10,11 @@
 
     <ImageView
         android:id="@+id/pictureImageView"
-        android:layout_width="116dp"
-        android:layout_height="116dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="@dimen/profilePicture"
+        android:layout_height="@dimen/profilePicture"
+        android:layout_marginStart="@dimen/spacingMedium"
+        android:layout_marginTop="@dimen/spacingMedium"
+        android:layout_marginBottom="@dimen/spacingMedium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,93 +22,98 @@
 
     <TextView
         android:id="@+id/firstNameTextView"
+        style="@style/nameTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="8dp"
-        android:fontFamily="sans-serif"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/referenceCountTextView"
+        android:layout_marginStart="@dimen/spacingMedium"
+        app:layout_constraintEnd_toStartOf="@+id/newIconImageView"
         app:layout_constraintStart_toEndOf="@+id/pictureImageView"
         app:layout_constraintTop_toTopOf="@+id/pictureImageView"
         tools:text="Mahsa" />
 
     <TextView
         android:id="@+id/topicTextView"
+        style="@style/topicTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="14sp"
+        android:layout_marginStart="@dimen/spacingMedium"
+        android:layout_marginTop="@dimen/spacingSmall"
+        android:layout_marginEnd="@dimen/spacingMedium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/pictureImageView"
         app:layout_constraintTop_toBottomOf="@+id/firstNameTextView"
-        tools:text="I can help you to learn English and french" />
+        tools:text="I can help you to learn English and French" />
 
     <TextView
         android:id="@+id/nativeTitleTextView"
+        style="@style/detailTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="NATIVE"
-        android:textSize="12sp"
-        android:textStyle="bold"
+        android:layout_marginStart="@dimen/spacingMedium"
+        android:text="@string/nativeTitle"
         app:layout_constraintBottom_toBottomOf="@+id/pictureImageView"
         app:layout_constraintStart_toEndOf="@+id/pictureImageView" />
 
     <TextView
         android:id="@+id/nativeTextView"
+        style="@style/detailValueTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="12sp"
+        android:layout_marginStart="@dimen/spacingSmall"
         app:layout_constraintBottom_toBottomOf="@+id/nativeTitleTextView"
         app:layout_constraintStart_toEndOf="@+id/nativeTitleTextView"
         tools:text="EN" />
 
     <TextView
         android:id="@+id/learnTitleTextView"
+        style="@style/detailTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:text="LEARNS"
-        android:textSize="12sp"
-        android:textStyle="bold"
+        android:layout_marginStart="@dimen/spacingLarge"
+        android:text="@string/learnsTitle"
         app:layout_constraintBottom_toBottomOf="@+id/pictureImageView"
         app:layout_constraintStart_toEndOf="@+id/nativeTextView" />
 
     <TextView
         android:id="@+id/learnTextView"
+        style="@style/detailValueTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="12sp"
+        android:layout_marginStart="@dimen/spacingSmall"
         app:layout_constraintBottom_toBottomOf="@+id/pictureImageView"
         app:layout_constraintStart_toEndOf="@+id/learnTitleTextView"
         tools:text="RU" />
 
     <ImageView
         android:id="@+id/likeImageView"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="@dimen/LikePicture"
+        android:layout_height="@dimen/LikePicture"
+        android:layout_marginEnd="@dimen/spacingMedium"
         app:layout_constraintBottom_toBottomOf="@+id/pictureImageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_like" />
 
     <TextView
         android:id="@+id/referenceCountTextView"
+        style="@style/referenceCountTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:textStyle="bold"
+        android:layout_marginTop="@dimen/spacingMedium"
+        android:layout_marginEnd="@dimen/spacingMedium"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="12" />
+
+    <ImageView
+        android:id="@+id/newIconImageView"
+        android:layout_width="@dimen/newPicture"
+        android:layout_height="@dimen/newPicture"
+        android:layout_marginTop="@dimen/spacingMedium"
+        android:layout_marginEnd="@dimen/spacingMedium"
+        android:src="@drawable/ic_new"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

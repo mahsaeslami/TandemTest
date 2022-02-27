@@ -1,0 +1,39 @@
+<resources>
+
+    <style name="nameTextView" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="android:fontFamily">"sans-serif"</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="topicTextView" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="android:fontFamily">"sans-serif"</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="detailTextView" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/textSmall</item>
+        <item name="android:fontFamily">"sans-serif"</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="detailValueTextView" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/textSmall</item>
+        <item name="android:fontFamily">"sans-serif"</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+
+    <style name="referenceCountTextView" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/textSmall</item>
+        <item name="android:fontFamily">"sans-serif"</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>
